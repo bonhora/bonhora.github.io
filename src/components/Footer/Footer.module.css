@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+.footer {
+    padding: 100px 10px 50px;
+    font-family: 'Roboto', sans-serif;
+
+
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.img {
+    margin: auto;
+    width: 50px;
+    height: auto;
+}
+
+.footer p {
+    margin: auto;
+    color: #aaa;
+    text-align: center;
+}
+
+.link {
+  transition: all 0.25s ease-out;
+}
+
+.link:hover {
+    cursor: pointer;
+    color: black;
+}

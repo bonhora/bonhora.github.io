@@ -1,0 +1,35 @@
+.container {
+    margin-top: 50px;
+}
+
+.form {
+    width: 100%;
+}
+
+.textarea {
+    resize: none;
+    width: 75%;
+    display: block;
+    margin: 30px auto;
+    padding: 10px;
+}
+
+.textarea:focus {
+    outline: #4a73e8 1px solid;
+}
+
+.submit {
+    background-color: #4a73e8;
+    padding: 10px 30px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    box-shadow: 1px 0 2px black;
+    transition: all 0.75s ease-out;
+}
+
+.submit:hover {
+    cursor: pointer;
+    filter: brightness(85%);
+}
+

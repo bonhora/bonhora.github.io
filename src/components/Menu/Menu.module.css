@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
+.menuopen,
+.menuclose {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: white;
+  height: 110%;
+  padding: 20px;
+  width: 30vw;
+  font-family: "Roboto", sans-serif;
+  cursor: default;
+  box-shadow: 2px 1px 10px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 2px 1px 10px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 1px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+.menuopen {
+  animation: myAnim 1s ease 0s 1 normal forwards;
+}
+
+.menuclose {
+  animation: myAnim2 1s ease 0s 1 normal forwards;
+}
+
+.menuicon {
+  padding: 15px;
+}
+
+.menuicon,
+.menulist li,
+.menulist li a {
+  transition: all 0.25s ease-out;
+}
+
+.menuicon:hover,
+.menulist li:hover,
+.menulist li a:hover {
+  cursor: pointer;
+  color: orange;
+}
+
+.menulist {
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+.menulist li {
+  padding: 20px;
+  border-bottom: 2px solid black;
+  transition: all 0.25s ease-out;
+}
+
+.menulist li a {
+  text-decoration: none;
+  color: black;
+}
+
+@keyframes myAnim {
+  0% {
+    opacity: 0;
+    transform: translateX(-250px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes myAnim2 {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(-250px);
+  }
+}
+
+@media only screen and (max-width: 1150px) and (min-width: 600px) {
+  .menuopen,
+  .menuclose {
+    width: 45vw;
+    z-index: 10;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  @keyframes myAnim {
+    0% {
+      opacity: 0;
+      transform: translateY(-200px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes myAnim2 {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    100% {
+      opacity: 0;
+      transform: translateY(-200px);
+    }
+  }
+
+  .menuopen,
+  .menuclose {
+    width: 100vw;
+    z-index: 10;
+  }
+
+  .menulist {
+    padding: 0;
+  }
+}
+
+@media only screen and (orientation: landscape) and (max-width: 1024px) {
+  @keyframes myAnim {
+    0% {
+      opacity: 0;
+      transform: translateY(-200px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes myAnim2 {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    100% {
+      opacity: 0;
+      transform: translateY(-200px);
+    }
+  }
+
+  .menuopen,
+  .menuclose {
+    width: 100vw;
+    z-index: 10;
+    overflow-y: scroll;
+  }
+
+  .menulist {
+    padding: 0;
+    font-size: 1rem;
+  }
+  
+  .menulist li {
+    border-bottom: 2px solid black;
+    transition: all 0.25s ease-out;
+  }
+}

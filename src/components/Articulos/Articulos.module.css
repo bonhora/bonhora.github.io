@@ -1,0 +1,13 @@
+.container {
+  width: 60%;
+  display: grid;
+  justify-items: center;
+  margin: auto;
+  row-gap: 50px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    width: 100%;
+  }
+}

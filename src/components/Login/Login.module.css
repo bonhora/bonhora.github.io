@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
+.container {
+  font-family: "Roboto", sans-serif;
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px;
+}
+
+.form {
+  width: 100%;
+  margin: auto;
+  height: 100%;
+}
+
+.input {
+  width: 30%;
+  padding: 5px;
+  display: block;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  border: none;
+  border-bottom: 2px solid #aaa;
+  transition: all 0.25s ease-out;
+}
+
+.input:focus {
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #4a73e8;
+}
+
+.buttoncontainer {
+  width: 30%;
+  margin: auto;
+}
+
+.button,
+.buttonregister {
+  background-color: #4a73e8;
+  padding: 10px 30px;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  box-shadow: 1px 0 2px black;
+  transition: all 0.5s ease-out;
+  font-weight: 500;
+}
+
+.button {
+  float: right;
+  width: 40%;
+}
+
+.buttonregister {
+  background-color: transparent;
+  color: gray;
+  float: left;
+  width: 60%;
+  box-shadow: none;
+  text-align: start;
+  padding: 10px 0;
+  transition: all 0.2s ease-out;
+}
+
+.button:hover {
+  filter: brightness(85%);
+  cursor: pointer;
+}
+
+.buttonregister:hover {
+  cursor: pointer;
+  color: #4a73e8;
+}
+
+@media only screen and (max-width: 1800px) and (min-width: 1200px) {
+  .container {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 600px) {
+  .container {
+    width: 80%;
+  }
+
+  .input {
+    width: 50%;
+  }
+
+  .buttoncontainer {
+    width: 50%;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+  .input, .buttoncontainer {
+    width: 80%;
+  }
+}
+
+@media only screen and (orientation: landscape) and (max-width: 1024px) {
+  .container {
+    height: auto;
+    padding-bottom: 30px;
+  }
+}

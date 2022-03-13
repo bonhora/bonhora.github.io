@@ -1,0 +1,5 @@
+.container {
+    display: grid;
+    grid-template-columns: 85vw;
+    justify-content: center;
+}
